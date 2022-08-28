@@ -7,14 +7,14 @@
  */
 
 const Alpaca = require("@alpacahq/alpaca-trade-api");
-const API_KEY = "<YOUR_API_KEY>";
-const API_SECRET = "<YOUR_API_SECRET>";
+const API_KEY = "PK1T5914JYUM0QIOPSB";
+const API_SECRET = "hxFq9ZgUPfWDk1YFZH87MVkVRy98xKKElYfwQHAB";
 
 class DataStream {
-  constructor({ apiKey, secretKey, feed }) {
+  constructor({ API_KEY, API_SECRET, feed }) {
     this.alpaca = new Alpaca({
-      keyId: apiKey,
-      secretKey,
+      keyId: API_KEY,
+      API_SECRET,
       feed,
     });
 

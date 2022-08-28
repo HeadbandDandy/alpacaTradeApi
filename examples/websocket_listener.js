@@ -5,14 +5,14 @@
  */
 
 const Alpaca = require("@alpacahq/alpaca-trade-api");
-const API_KEY = "<YOUR_API_KEY>";
-const API_SECRET = "<YOUR_API_SECRET>";
+const API_KEY = "PK1T5914JYUM0QIOPSB2";
+const API_SECRET = "hxFq9ZgUPfWDk1YFZH87MVkVRy98xKKElYfwQHAB";
 
 class WebsocketSubscriber {
   constructor({ keyId, secretKey, paper = true }) {
     this.alpaca = new Alpaca({
-      keyId: keyId,
-      secretKey: secretKey,
+      keyId: API_KEY,
+      secretKey: API_SECRET,
       paper: paper,
     });
 

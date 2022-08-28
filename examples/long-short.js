@@ -1,6 +1,6 @@
-const Alpaca = require('@alpacahq/alpaca-trade-api')
-const API_KEY = 'YOUR_API_KEY_HERE';
-const API_SECRET = 'YOUR_API_SECRET_HERE';
+const Alpaca = require("@alpacahq/alpaca-trade-api")
+const API_KEY = 'PK1T5914JYUM0QIOPSB2';
+const API_SECRET = 'hxFq9ZgUPfWDk1YFZH87MVkVRy98xKKElYfwQHAB';
 const USE_POLYGON = false;  // by default we use the Alpaca data stream but you can change that
 
 const MINUTE = 60000
@@ -8,10 +8,10 @@ const SideType = { BUY: 'buy', SELL: 'sell' }
 const PositionType = { LONG: 'long', SHORT: 'short' }
 
 class LongShort {
-  constructor ({ keyId, secretKey, paper = true, bucketPct = 0.25 }) {
+  constructor ({ API_KEY, API_SECRET, paper = true, bucketPct = 0.25 }) {
     this.alpaca = new Alpaca({
-      keyId: keyId,
-      secretKey: secretKey,
+      keyId: API_KEY,
+      secretKey: API_SECRET,
       paper: paper,
       usePolygon: USE_POLYGON
     })
